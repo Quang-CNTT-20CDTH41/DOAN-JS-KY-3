@@ -8,72 +8,6 @@ Viết chương trình quản lý sinh viên của một trường học.
     2.3. Thêm sửa xóa, tìm kiếm sinh viên
 */
 
-// import("sutdent");
-
-class Student{
-    constructor(id, fullname, code, className, faculty, maths, physics, chemistry){
-        this.__id = id;
-        this.__fullname = fullname;
-        this.__code = code;
-        this.__className = className;
-        this.__faculty = faculty;
-        this.__maths = maths;
-        this.__physics = physics;
-        this.__chemistry = chemistry;
-    }
-
-    set id(value) { this.__id = value };
-    get id() { return this.__id };
-
-    set fullname(value) { this.__fullname = value };
-    get fullname() { return this.__fullname };
-
-    set code(value) { this.__code = value };
-    get code() { return this.__code };
-
-    set className(value) { this.__className = value };
-    get className() { return this.__className };
-
-    set faculty(value) { this.__faculty = value };
-    get faculty() { return this.__faculty };
-
-    set maths(value) { this.__maths = value };
-    get maths() { return this.__maths };
-
-    set physics(value) { this.__physics = value };
-    get physics() { return this.__physics };
-
-    set chemistry(value) { this.__chemistry = value };
-    get chemistry() { return this.__chemistry };
-}
-
-class Faculty{
-    constructor(id, name){
-        this.__id = id;
-        this.__name = name;
-    }
-
-    set id(value) { this.__id = value };
-    get id() { return this.__id };
-
-    set name(value) { this.__name = value };
-    get name() { return this.__name };
-}
-
-class ClassName{
-    constructor(id, name){
-        this.__id = id;
-        this.__name = name;
-    }
-
-    set id(value) { this.__id = value };
-    get id() { return this.__id };
-
-    set name(value) { this.__name = value };
-    get name() { return this.__name };
-}
-
-/** _________________________________________________________ */
 
 // CREATE ARRAY
 
@@ -276,7 +210,7 @@ function renderStudentScore() {
 window.onload = function () {
     display();
     create();
-    // dataStudent();
+    dataStudent();
     renderStudent();
 }
 

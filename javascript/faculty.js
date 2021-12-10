@@ -1,4 +1,16 @@
 /** _____________________ FACULTY ____________________________________ */
+class Faculty{
+    constructor(id, name){
+        this.__id = id;
+        this.__name = name;
+    }
+
+    set id(value) { this.__id = value };
+    get id() { return this.__id };
+
+    set name(value) { this.__name = value };
+    get name() { return this.__name };
+}
 
 // ADD FACULTY IN ARRAY
 idFa = 0;
